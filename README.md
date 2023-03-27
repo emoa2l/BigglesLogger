@@ -8,8 +8,7 @@ To install BigglesLogger, simply copy the BigglesLogger.py file into your projec
 ## Usage
 To use BigglesLogger in your project, import the BigglesLogger class and create an instance of it with the desired log level and log directory:
 
-python
-Copy code
+'''
 from BigglesLogger import BigglesLogger
 
 logger = BigglesLogger(log_level=logging.DEBUG, log_directory='./logs')
@@ -20,13 +19,15 @@ logger.info('This is an info message')
 logger.warning('This is a warning message')
 logger.error('This is an error message')
 logger.critical('This is a critical message')
+'''
+
 By default, logs are written to the ./logs directory and rotated daily. You can specify a different log directory by passing it to the BigglesLogger constructor:
 
-python
-Copy code
+
+'''
 logger = BigglesLogger(log_level=logging.DEBUG, log_directory='/path/to/logs')
 You can also customize the log format by modifying the formatter object in the setup_logging() method.
-
+'''
 ## Contributing
 If you find a bug or have a feature request, please open an issue on the GitHub repository. Pull requests are also welcome.
 
