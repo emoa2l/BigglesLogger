@@ -26,8 +26,9 @@ By default, logs are written to the ./logs directory and rotated daily. You can 
 
 ```
 logger = BigglesLogger(log_level=logging.DEBUG, log_directory='/path/to/logs')
-You can also customize the log format by modifying the formatter object in the setup_logging() method.
 ```
+
+You can also customize the log format by modifying the formatter object in the setup_logging() method.
 
 ## Contributing
 If you find a bug or have a feature request, please open an issue on the GitHub repository. Pull requests are also welcome.
